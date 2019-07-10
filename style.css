@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+.scoreboard {
+  margin: 20px auto 0 auto;
+  padding: 25px 0;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  border: 5px solid maroon;
+}
+.show-name {
+  position: absolute;
+}
+.show-name:nth-child(1) {
+  top: 40%;
+  left: -25px;
+  background-color: maroon;
+  padding: 2px;
+  z-index: 1;
+}
+.show-name:nth-child(2) {
+  top: 40%;
+  right: -25px;
+  background-color: maroon;
+  padding: 2px;
+  z-index: 1;
+}
+#user-score,
+#cpu-score,
+.colon {
+  font-size: 3em;
+}
+#indicator {
+  text-align: center;
+  margin: 10px 0;
+}
+.options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+figure[id] {
+  border: 4px solid white;
+  padding: 35px;
+  border-radius: 50%;
+}
+figure > img {
+  user-select: none;
+  width: 100px;
+  height: 100px;
+}
+.action-caller {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.red-glow {
+  border: 4px solid firebrick;
+  box-shadow: 0 0 10px red;
+}
+.green-glow {
+  border: 4px solid forestgreen;
+  box-shadow: 0 0 10px lightgreen;
+}
+.gray-glow {
+  border: 4px solid gray;
+  box-shadow: 0 0 10px dimgray;
+}

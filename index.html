@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock, paper, scissors</title>
+    <link rel="shortcut icon" type="x-icon" href="imgs/rps.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Rock, paper, scissors game</h1>
+    <div class="scoreboard">
+      <span class="show-name">User</span><span class="show-name">CPU</span>
+      <span id="user-score">0</span> <span class="colon">:</span>
+      <span id="cpu-score">0</span>
+    </div>
+    <p id="indicator">Click one of the buttons.</p>
+    <section class="options">
+      <figure id="r">
+        <img src="imgs/rock.png" alt="Rock" />
+        <figcaption>Rock</figcaption>
+      </figure>
+      <figure id="p">
+        <img src="imgs/paper.png" alt="paper" />
+        <figcaption>Paper</figcaption>
+      </figure>
+      <figure id="s">
+        <img src="imgs/scissors.png" alt="Scissors" />
+        <figcaption>Scissors</figcaption>
+      </figure>
+    </section>
+    <p class="action-caller">Take a pick.</p>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
